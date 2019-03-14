@@ -1,0 +1,29 @@
+{
+  "name": "faceitspy",
+  "version": "1.0.0",
+  "description": "This application records all chat in a Faceit hub and stores it on a discord server.",
+  "main": "logbot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yes"
+  ],
+  "author": "James Dolphin",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "dotenv": "^6.2.0",
+    "node-fetch": "^2.3.0",
+    "ws": "^6.1.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesDolphin/FaceitSpy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JamesDolphin/FaceitSpy/issues"
+  },
+  "homepage": "https://github.com/JamesDolphin/FaceitSpy#readme"
+}
