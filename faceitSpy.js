@@ -6,6 +6,7 @@ const PLAIN = (process.env.PLAIN);
 const guid = (process.env.BOTGUID);
 const chat_id = (process.env.CHATID);
 const client = new Discord.Client();
+const channel = (process.env.DCCHANNEL)
 
 //Connecting to discord
 client.on('ready', () => {
@@ -35,7 +36,7 @@ const guidtonick = async (nickget, message) => {
     const myJson = await response.json(); //extract JSON from the http response
 
     //This is the discord bot sending the messages to the pre defined channel
-    client.channels.get('536440569338003456').send(getTimeStamp() + ' ' + await myJson.payload.nickname + ' -- ' + message);
+    client.channels.get(channel).send(getTimeStamp() + ' ' + await myJson.payload.nickname + ' -- ' + message);
 }
 
 //Main socket creation for the faceit chat system
